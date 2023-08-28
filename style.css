@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    display: flex;
+    /* justify-content: center; */
+     align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgb(157, 5, 155) 0%, rgb(227, 218, 221) 100%, rgb(31, 1, 24) 100%);
+    font-family:'Times New Roman', Times, serif;
+    color: #1a1042;
+}
+
+#h{
+    margin-top: 0px;
+    margin-left: 20px;
+    align-items:left;
+    font-size:30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding:20px;
+}
+
+
+.container {
+    background:white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.3),0 0 4px 20px rgba(131, 96, 174, 0.3);;
+    width: 85%;
+    max-width: 500px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container:hover{
+    transform: scale(0.8, 1);
+    box-shadow:0 0 4px 10px rgba(125, 1, 34, 0.3);
+}
+
+.heading {
+    font-size: 35px;
+}
+
+.temp-container {
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 23px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 60%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    outline: none;
+    background: rgba(157, 3, 98, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: darkblue;
+    font-size: 15px;
+    border-radius: 30px;
+}
+input:hover{
+    transform: scale(0.9, 1);
+    background: grey;
+    
+    
+}
+
+input::placeholder {
+    color: black;
+}
+input::placeholder:hover {
+    color: white;
+}
+
+/* Responsive CSS */
+@media (min-width: 600px) {
+    .container {
+        width: 70%;
+    }
+
+    input {
+        width: 30%;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 60%;
+    }
+
+    input {
+        width: 40%;
+    }
+}
